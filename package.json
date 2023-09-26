@@ -1,6 +1,6 @@
 {
   "name": "monopolo11-website",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,19 +9,35 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/carousel": "^7.0.1",
+    "@mantine/code-highlight": "^7.0.1",
+    "@mantine/core": "^7.0.1",
+    "@mantine/dates": "^7.0.1",
+    "@mantine/form": "^7.0.1",
+    "@mantine/hooks": "^7.0.1",
+    "@mantine/modals": "^7.0.1",
+    "@mantine/notifications": "^7.0.1",
+    "@mantine/nprogress": "^7.0.1",
+    "@socialgouv/matomo-next": "^1.8.0",
+    "@tabler/icons-react": "^2.35.0",
+    "clsx": "^2.0.0",
+    "dayjs": "^1.11.10",
+    "embla-carousel-react": "^7.1.0",
+    "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
     "@types/node": "latest",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "postcss-preset-mantine": "^1.7.0",
+    "postcss-simple-vars": "^7.0.1",
+    "tailwindcss": "latest",
+    "typescript": "latest"
   }
 }

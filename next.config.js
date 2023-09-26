@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  output: "standalone",
+};
 
-module.exports = nextConfig
+const { version } = require("./package.json");
+
+module.exports = async () => {
+  console.log(`v: ${version}`);
+  return nextConfig;
+};

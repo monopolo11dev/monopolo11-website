@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  dashboard-v3:
+    image: ghcr.io/monopolo11/monopolo11-website:latest
+    container_name: monopolo11-website
+    ports:
+      - "3081:3000"
+    env_file:
+      - stack.env
+    restart: unless-stopped
