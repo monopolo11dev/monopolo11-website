@@ -3,7 +3,7 @@ import { Anchor, Group, ActionIcon, rem, Flex } from "@mantine/core";
 import { IconBrandGithub } from "@tabler/icons-react";
 import classes from "./Footer.module.css";
 import clsx from "clsx";
-const { version } = require("../../package.json");
+import { version } from "../../package.json";
 
 const links = [{ link: "/", label: "Home" }];
 

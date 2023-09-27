@@ -39,12 +39,12 @@ export const setPower: SingleSetFunction = (setA) => {
   for (let i = 0; i < setA.length; i++) {
     const len = tmp.length;
     for (let x = 0; x < len; x++) {
-      let item = setA[i];
-      let concat = tmp[x].concat(item);
+      const item = setA[i];
+      const concat = tmp[x].concat(item);
       tmp.push(concat);
     }
   }
-  let res = ["∅"];
+  const res = ["∅"];
   for (let i = 1; i < tmp.length; i++) {
     res.push(`(${tmp[i].toString()})`);
   }
@@ -57,13 +57,13 @@ export const setCardinality = (set: string[]) => {
 };
 
 export const generateRandomSet = (universe: string[]): string[] => {
-  let size = randomInt(universe.length);
+  const size = randomInt(universe.length);
   console.log(size);
   const result: string[] = [];
   let i = 1;
   while (i <= size) {
-    let random = randomInt(universe.length);
-    let itemFromUniverse = universe[random - 1];
+    const random = randomInt(universe.length);
+    const itemFromUniverse = universe[random - 1];
     if (!result.includes(itemFromUniverse)) {
       result.push(itemFromUniverse);
       i++;
