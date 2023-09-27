@@ -1,31 +1,22 @@
 "use client";
-import {
-  Menu,
-  Group,
-  Center,
-  Burger,
-  Container,
-  Title,
-  em,
-} from "@mantine/core";
+import { Menu, Group, Center, Container, Title, em } from "@mantine/core";
 import classes from "./HeaderMenu.module.css";
-import { useDisclosure, useMediaQuery } from "@mantine/hooks";
+import { useMediaQuery } from "@mantine/hooks";
 import { IconChevronDown } from "@tabler/icons-react";
 import Link from "next/link";
 
-interface Link {
+interface LinkInterface {
   link: string;
   label: string;
-  links?: Link[];
+  links?: LinkInterface[];
 }
 
-const links: Link[] = [
+const links: LinkInterface[] = [
   { link: "/", label: "Home" },
   { link: "/calculadora-de-conjuntos", label: "Calculadora de Conjuntos" },
 ];
 
 export function HeaderMenu() {
-  const [opened, { toggle }] = useDisclosure(false);
   const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
 
   const items = links.map((link) => {

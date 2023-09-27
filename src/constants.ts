@@ -32,3 +32,7 @@ export const LEGACY_ROUTES = [
   "READS",
   "Consignor",
 ];
+
+export const SITE_TITLE = "Monopolo11's website - ";
+export const SENTRY_DSN =
+  "https://c384559c278f3aa919dff5b9614a6a17@o1320744.ingest.sentry.io/4505950818861056";
