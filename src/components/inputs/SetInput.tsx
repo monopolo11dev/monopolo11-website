@@ -10,7 +10,6 @@ interface SetInputProps {
   className?: string;
   universe: string[];
   set: string[];
-  // eslint-disable-next-line no-unused-vars
   onGenerateSet: (set: Sets) => void;
   label: string;
   onChange: Dispatch<SetStateAction<string[]>>;
@@ -51,6 +50,7 @@ const SetInput: FC<SetInputProps> = ({
         <div className={clsx("my-auto pl-5", isMobile && "pt-4")}>
           <ActionIcon
             className="mt-auto"
+            variant="filled"
             onClick={() => onGenerateSet(setLabel)}
           >
             <IconArrowsShuffle className="m-auto" />

@@ -299,6 +299,7 @@ const SetCalculator: FC = () => {
 
       <Button
         className="mt-8"
+        variant="filled"
         onClick={handleCalculate}
         disabled={isButtonDisabled}
       >
@@ -314,6 +315,7 @@ const SetCalculator: FC = () => {
             <CopyButton value={result.toString()}>
               {({ copied, copy }) => (
                 <Button
+                  variant="filled"
                   color={copied ? "teal" : "blue"}
                   onClick={copy}
                   style={{ width: rem("185px") }}
