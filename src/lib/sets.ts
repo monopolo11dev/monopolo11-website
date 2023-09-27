@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 export type SetFunction = (setA: string[], setB: string[]) => string[];
+// eslint-disable-next-line no-unused-vars
 export type SingleSetFunction = (setA: string[]) => string[] | string;
 
 export const setIntersection: SetFunction = (setA, setB) => {

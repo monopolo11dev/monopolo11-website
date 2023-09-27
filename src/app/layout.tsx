@@ -7,7 +7,7 @@ import { HeaderMenu } from "@/components/HeaderMenu";
 import { Footer } from "@/components/Footer";
 import clsx from "clsx";
 import { init } from "@socialgouv/matomo-next";
-import { useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,12 +19,11 @@ const MATOMO_SITE_ID = "4";
 //   description: "Monopolo11's website",
 // };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  useEffect(() => init({ url: MATOMO_URL, siteId: MATOMO_SITE_ID }));
+export default function RootLayout({ children }: { children: ReactNode }) {
+  useEffect(() => {
+    if (process.env.NODE_ENV === "production")
+      init({ url: MATOMO_URL, siteId: MATOMO_SITE_ID });
+  });
 
   return (
     <html lang="en">

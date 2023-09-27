@@ -4,12 +4,13 @@ import { ActionIcon, TagsInput, em, rem } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import { IconArrowsShuffle } from "@tabler/icons-react";
 import clsx from "clsx";
-import React, { Dispatch, FC, SetStateAction, useState } from "react";
+import React, { Dispatch, FC, SetStateAction } from "react";
 
 interface SetInputProps {
   className?: string;
   universe: string[];
   set: string[];
+  // eslint-disable-next-line no-unused-vars
   onGenerateSet: (set: Sets) => void;
   label: string;
   onChange: Dispatch<SetStateAction<string[]>>;

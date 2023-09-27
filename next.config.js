@@ -1,11 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
+  experimental: {
+    instrumentationHook: true,
+  },
 };
 
-const { version } = require("./package.json");
+module.exports = nextConfig;
 
-module.exports = async () => {
-  console.log(`v: ${version}`);
-  return nextConfig;
-};
+const { withSentryConfig } = require("@sentry/nextjs");
+
+module.exports = withSentryConfig(
+  module.exports,
+  {
+    silent: true,
+    org: "bernardo-ruiz",
+    project: "monopolo11-website",
+  },
+  {
+    widenClientFileUpload: true,
+    transpileClientSDK: true,
+    tunnelRoute: "/monitoring",
+    hideSourceMaps: true,
+    disableLogger: true,
+  }
+);

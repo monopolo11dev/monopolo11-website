@@ -7,7 +7,6 @@ import {
   Container,
   CopyButton,
   Flex,
-  Loader,
   LoadingOverlay,
   NumberInput,
   OptionsFilter,
@@ -33,7 +32,6 @@ import {
   setUnion,
 } from "@/lib";
 import SetInput from "@/components/inputs/SetInput";
-import { Metadata } from "next";
 import { IconInfoCircle } from "@tabler/icons-react";
 import Link from "next/link";
 import { useLocalStorage, useMediaQuery } from "@mantine/hooks";
@@ -85,7 +83,7 @@ const SetCalculator: FC = () => {
   const [selectedSet2, setSelectedSet2] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [result, setResult] = useState<string[] | string>([]);
-  const [hideAlert, setHideAlert, removeValue] = useLocalStorage({
+  const [hideAlert, setHideAlert] = useLocalStorage({
     key: "hideVersionAlert",
     defaultValue: false,
   });
