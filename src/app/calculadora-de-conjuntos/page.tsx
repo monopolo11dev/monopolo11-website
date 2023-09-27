@@ -114,7 +114,7 @@ const SetCalculator: FC = () => {
   };
 
   const optionsFilter: OptionsFilter = ({ options }) => {
-    let newOptions = options.filter(
+    const newOptions = options.filter(
       (option) => (option as ComboboxItem).value != "Universo"
     );
     if (operation?.canBeSame) return newOptions;
@@ -123,7 +123,7 @@ const SetCalculator: FC = () => {
     );
   };
   const optionsFilter2: OptionsFilter = ({ options }) => {
-    let newOptions = options.filter(
+    const newOptions = options.filter(
       (option) => (option as ComboboxItem).value != "Universo"
     );
     if (operation?.canBeSame) return newOptions;
