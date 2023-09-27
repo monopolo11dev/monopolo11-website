@@ -1,6 +1,6 @@
 {
   "name": "monopolo11-website",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -21,6 +21,7 @@
     "@sentry/nextjs": "^7.72.0",
     "@socialgouv/matomo-next": "^1.8.0",
     "@tabler/icons-react": "^2.35.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
     "clsx": "^2.0.0",
     "dayjs": "^1.11.10",
     "embla-carousel-react": "^7.1.0",
