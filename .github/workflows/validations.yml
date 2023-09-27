@@ -10,7 +10,8 @@
 name: Validate
 
 on:
-  - push
+  push:
+    branches-ignore: ["main"]
 
 jobs:
   Validations:
