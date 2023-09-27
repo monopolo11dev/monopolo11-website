@@ -48,6 +48,11 @@ jobs:
             latest
             ${{ steps.package-version.outputs.current-version}}
 
+      - name: "Create env file"
+        run: |
+          touch .env
+          echo SENTRY_AUTH_TOKEN=${{ secrets.SENTRY_AUTH_TOKEN }} >> .env
+
       - name: Build and push Docker image
         uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
         with:

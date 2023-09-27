@@ -22,6 +22,5 @@ module.exports = withSentryConfig(
     transpileClientSDK: true,
     tunnelRoute: "/monitoring",
     hideSourceMaps: true,
-    disableLogger: true,
   }
 );
