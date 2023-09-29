@@ -30,6 +30,8 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -39,6 +41,7 @@
     "postcss": "latest",
     "postcss-preset-mantine": "^1.7.0",
     "postcss-simple-vars": "^7.0.1",
+    "semantic-release": "^22.0.5",
     "tailwindcss": "latest",
     "typescript": "latest"
   }
