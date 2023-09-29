@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/monopolo11/monopolo11-website/compare/v1.0.1...v1.1.0) (2023-09-29)
+
+
+### Features
+
+* **minor:** better deployment ([e584e78](https://github.com/monopolo11/monopolo11-website/commit/e584e78f84785eb51372c91774856d218d0a2a5c))
+
 ## [1.0.1](https://github.com/monopolo11/monopolo11-website/compare/v1.0.0...v1.0.1) (2023-09-29)
 
 
