@@ -77,7 +77,7 @@ jobs:
           verify_ssl: false
 
       - name: Wait for 1 minute
-        run: sleep 60
+        run: sleep 45
 
       - uses: altinukshini/deployment-action@releases/v1
         name: Create GitHub deployment
