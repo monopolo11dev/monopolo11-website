@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/monopolo11/monopolo11-website/compare/v1.1.0...v1.1.1) (2023-09-29)
+
+
+### Bug Fixes
+
+* release action ([46c1d98](https://github.com/monopolo11/monopolo11-website/commit/46c1d985d0fbef854c25392b43297be185ccde0e))
+
 # [1.1.0](https://github.com/monopolo11/monopolo11-website/compare/v1.0.0...v1.1.0) (2023-09-29)
 
 
