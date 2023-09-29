@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/monopolo11/monopolo11-website/compare/v1.1.1...v1.1.2) (2023-09-29)
+
+
+### Bug Fixes
+
+* npm management ([1b2ca1b](https://github.com/monopolo11/monopolo11-website/commit/1b2ca1b41e6aee092c1f676dbfaad7187b2e03c8))
+
 ## [1.1.1](https://github.com/monopolo11/monopolo11-website/compare/v1.1.0...v1.1.1) (2023-09-29)
 
 
