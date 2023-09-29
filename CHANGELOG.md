@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/monopolo11/monopolo11-website/compare/v1.0.0...v1.0.1) (2023-09-29)
+
+
+### Bug Fixes
+
+* sentry privacy settings ([251a286](https://github.com/monopolo11/monopolo11-website/commit/251a2869010c663c70217c30e2e0dbda8443b163))
+
 # 1.0.0 (2023-09-29)
 
 
