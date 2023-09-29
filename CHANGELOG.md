@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/monopolo11/monopolo11-website/compare/v1.1.2...v1.1.3) (2023-09-29)
+
+
+### Bug Fixes
+
+* use npm package version ([6052371](https://github.com/monopolo11/monopolo11-website/commit/60523712e785a995c2e212734223ce81e9123c51))
+
 ## [1.1.2](https://github.com/monopolo11/monopolo11-website/compare/v1.1.1...v1.1.2) (2023-09-29)
 
 
