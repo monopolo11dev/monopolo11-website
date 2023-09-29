@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/monopolo11/monopolo11-website/compare/v1.0.0...v1.1.0) (2023-09-29)
+
+
+### Features
+
+* changed used token ([a02bb54](https://github.com/monopolo11/monopolo11-website/commit/a02bb54ad855c525ae74d3bbbed9220691069056))
+
 # 1.0.0 (2023-09-29)
 
 ### Features
