@@ -7,13 +7,6 @@ on:
 permissions:
   contents: read # for checkout
 
-env:
-  GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
-  GIT_AUTHOR_NAME: "monopolo11"
-  GIT_COMMITTER_NAME: "monopolo11"
-  GIT_COMMITTER_EMAIL: ${{ secrets.RELEASE_EMAIL }}
-  GIT_AUTHOR_EMAIL: ${{ secrets.RELEASE_EMAIL }}
-
 jobs:
   release:
     name: Release
@@ -28,6 +21,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          token: ${{ secrets.RELEASE_TOKEN }}
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
