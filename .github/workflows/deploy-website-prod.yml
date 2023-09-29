@@ -76,6 +76,9 @@ jobs:
           webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
           verify_ssl: false
 
+      - name: Wait for 1 minute
+        run: sleep 60
+
       - uses: altinukshini/deployment-action@releases/v1
         name: Create GitHub deployment
         id: deployment
@@ -84,6 +87,15 @@ jobs:
           target_url: https://monopolo11.com
           environment: production
           description: Deployed version ${{ needs.build-and-push-image.outputs.version }}
+
+      - name: Make HTTP request and validate version
+        run: |
+          response=$(curl -s https://monopolo11.com/status)
+          version=$(echo $response | jq -r '.version')
+          if [[ "$version" != ${{ needs.build-and-push-image.outputs.version }} ]]; then
+            echo "Error: version $version is not supported"
+            exit 1
+          fi
 
       - name: Update deployment status (success)
         if: success()
