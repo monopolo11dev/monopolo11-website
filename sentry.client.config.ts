@@ -14,8 +14,8 @@ Sentry.init({
 
   integrations: [
     new Sentry.Replay({
-      maskAllText: true,
-      blockAllMedia: true,
+      maskAllText: false,
+      blockAllMedia: false,
     }),
   ],
 });
