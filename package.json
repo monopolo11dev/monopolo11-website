@@ -1,7 +1,7 @@
 {
   "name": "monopolo11-website",
   "description": "Monopolo11 website",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
