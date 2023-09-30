@@ -4,8 +4,8 @@
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 0.1.x   | :white_check_mark  |
+| 1.x.x   | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
-Open an issue to report any vulnerabilities 
+If you have encountered a vulnerability in this project please disclose it [here](https://github.com/monopolo11/monopolo11-website/security/advisories/new).
