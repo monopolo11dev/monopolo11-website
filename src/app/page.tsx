@@ -1,4 +1,3 @@
-"use client";
 import { IconBrandGithub } from "@tabler/icons-react";
 import Link from "next/link";
 

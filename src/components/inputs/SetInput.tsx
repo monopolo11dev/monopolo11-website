@@ -1,10 +1,10 @@
 "use client";
-import { Sets } from "@/app/calculadora-de-conjuntos/page";
 import { ActionIcon, TagsInput, em, rem } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import { IconArrowsShuffle } from "@tabler/icons-react";
 import clsx from "clsx";
 import React, { Dispatch, FC, SetStateAction } from "react";
+import { Sets } from "../SetCalculator";
 
 interface SetInputProps {
   className?: string;
