@@ -41,7 +41,7 @@
     "eslint": "latest",
     "eslint-config-next": "latest",
     "postcss": "latest",
-    "postcss-preset-mantine": "^1.7.0",
+    "postcss-preset-mantine": "^1.8.0",
     "postcss-simple-vars": "^7.0.1",
     "semantic-release": "^22.0.5",
     "tailwindcss": "latest",
