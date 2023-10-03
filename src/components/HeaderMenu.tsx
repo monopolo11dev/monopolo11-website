@@ -54,7 +54,7 @@ export function HeaderMenu() {
         <div className={classes.inner}>
           <Link href="/">
             <Title order={1} size={isMobile ? '24' : '30'}>
-              Monopolo11&aposs Website
+              Monopolo11&apos;s Website
             </Title>
           </Link>
           <Group gap={5} visibleFrom="sm" className="ml-8">
