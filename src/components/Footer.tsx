@@ -5,10 +5,10 @@ import { IconBrandGithub } from '@tabler/icons-react';
 import clsx from 'clsx';
 import classes from './Footer.module.css';
 import packageInfo from '../../package.json';
-
-const links = [{ link: '/', label: 'Home' }];
+import { AppRoutes } from '@/constants';
 
 export function Footer() {
+  const links = AppRoutes.filter((link) => !link.headerOnly);
   const items = links.map((link) => (
     <Anchor
       c="dimmed"
