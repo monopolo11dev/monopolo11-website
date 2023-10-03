@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/monopolo11/monopolo11-website/compare/v1.1.4...v1.2.0) (2023-10-03)
+
+
+### Features
+
+* **minor:** added menu functionality ([66bfa73](https://github.com/monopolo11/monopolo11-website/commit/66bfa73fafbfdd4688ef1e3d4e7109b7c968c11c))
+* **minor:** better globar error page ([64d18d7](https://github.com/monopolo11/monopolo11-website/commit/64d18d756aa4beb4046766f8d6e5f2ab361f2a02))
+* **minor:** better not found page ([dfece0b](https://github.com/monopolo11/monopolo11-website/commit/dfece0b5d359759332534c60ceddcf20a24d331e))
+
 ## [1.1.4](https://github.com/monopolo11/monopolo11-website/compare/v1.1.3...v1.1.4) (2023-10-03)
 
 
