@@ -5,20 +5,12 @@ import { useMediaQuery } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
 import Link from 'next/link';
 import classes from './HeaderMenu.module.css';
-
-interface LinkInterface {
-  link: string;
-  label: string;
-  links?: LinkInterface[];
-}
-
-const links: LinkInterface[] = [
-  { link: '/', label: 'Home' },
-  { link: '/calculadora-de-conjuntos', label: 'Calculadora de Conjuntos' },
-];
+import { AppRoutes } from '@/constants';
 
 export function HeaderMenu() {
   const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
+
+  const links = AppRoutes.filter((link) => !link.footerOnly);
 
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
