@@ -1,8 +1,9 @@
-"use client";
-import { LEGACY_ROUTES } from "@/constants";
-import { Button, Title } from "@mantine/core";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+'use client';
+
+import { Button, Title } from '@mantine/core';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { LEGACY_ROUTES } from '@/constants';
 
 const LEGACY_TEXT =
   "Sorry, we couldn't find what you were looking for. You are probably looking for a page that was moved to a legacy page.";
@@ -22,10 +23,7 @@ function NotFoundPage() {
         <p>{pathname}</p>
       </p>
       {isLegacy && (
-        <Button
-          component={Link}
-          href={"https://legacy.monopolo11.com" + pathname}
-        >
+        <Button component={Link} href={`https://legacy.monopolo11.com${pathname}`}>
           Click here to try and redirect
         </Button>
       )}

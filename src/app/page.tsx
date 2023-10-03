@@ -1,5 +1,5 @@
-import { IconBrandGithub } from "@tabler/icons-react";
-import Link from "next/link";
+import { IconBrandGithub } from '@tabler/icons-react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
