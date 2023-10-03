@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/monopolo11/monopolo11-website/compare/v1.1.3...v1.1.4) (2023-10-03)
+
+
+### Bug Fixes
+
+* **minor:** fixed escaped apos ([68d61ba](https://github.com/monopolo11/monopolo11-website/commit/68d61badf6046cb23bbf324a05e644b49d24a43e))
+
 ## [1.1.3](https://github.com/monopolo11/monopolo11-website/compare/v1.1.2...v1.1.3) (2023-10-03)
 
 
