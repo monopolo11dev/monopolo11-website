@@ -1,9 +1,10 @@
-"use client";
-import { Menu, Group, Center, Container, Title, em } from "@mantine/core";
-import classes from "./HeaderMenu.module.css";
-import { useMediaQuery } from "@mantine/hooks";
-import { IconChevronDown } from "@tabler/icons-react";
-import Link from "next/link";
+'use client';
+
+import { Menu, Group, Center, Container, Title, em } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
+import { IconChevronDown } from '@tabler/icons-react';
+import Link from 'next/link';
+import classes from './HeaderMenu.module.css';
 
 interface LinkInterface {
   link: string;
@@ -12,8 +13,8 @@ interface LinkInterface {
 }
 
 const links: LinkInterface[] = [
-  { link: "/", label: "Home" },
-  { link: "/calculadora-de-conjuntos", label: "Calculadora de Conjuntos" },
+  { link: '/', label: 'Home' },
+  { link: '/calculadora-de-conjuntos', label: 'Calculadora de Conjuntos' },
 ];
 
 export function HeaderMenu() {
@@ -26,12 +27,7 @@ export function HeaderMenu() {
 
     if (menuItems) {
       return (
-        <Menu
-          key={link.label}
-          trigger="hover"
-          transitionProps={{ exitDuration: 0 }}
-          withinPortal
-        >
+        <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal>
           <Menu.Target>
             <Link href={link.link} className={classes.link}>
               <Center>
@@ -57,8 +53,8 @@ export function HeaderMenu() {
       <Container size="85%">
         <div className={classes.inner}>
           <Link href="/">
-            <Title order={1} size={isMobile ? "24" : "30"}>
-              {"Monopolo11's Website"}
+            <Title order={1} size={isMobile ? '24' : '30'}>
+              Monopolo11&aposs Website
             </Title>
           </Link>
           <Group gap={5} visibleFrom="sm" className="ml-8">

@@ -1,10 +1,11 @@
-"use client";
-import { ActionIcon, TagsInput, em, rem } from "@mantine/core";
-import { useMediaQuery } from "@mantine/hooks";
-import { IconArrowsShuffle } from "@tabler/icons-react";
-import clsx from "clsx";
-import React, { Dispatch, FC, SetStateAction } from "react";
-import { Sets } from "../SetCalculator";
+'use client';
+
+import { ActionIcon, TagsInput, em, rem } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
+import { IconArrowsShuffle } from '@tabler/icons-react';
+import clsx from 'clsx';
+import React, { Dispatch, FC, SetStateAction } from 'react';
+import { Sets } from '../SetCalculator';
 
 interface SetInputProps {
   className?: string;
@@ -13,7 +14,7 @@ interface SetInputProps {
   onGenerateSet: (set: Sets) => void;
   label: string;
   onChange: Dispatch<SetStateAction<string[]>>;
-  setLabel: "a" | "b";
+  setLabel: 'a' | 'b';
 }
 
 const SetInput: FC<SetInputProps> = ({
@@ -27,12 +28,12 @@ const SetInput: FC<SetInputProps> = ({
 }) => {
   const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
   return (
-    <div className={clsx("flex flex-col items-center", className)}>
+    <div className={clsx('flex flex-col items-center', className)}>
       {label}
       <div
         className={clsx(
-          !isMobile ? "flex " : "flex-col items-center place-items-center",
-          "justify-center align-center content-center"
+          !isMobile ? 'flex ' : 'flex-col items-center place-items-center',
+          'justify-center align-center content-center'
         )}
       >
         <TagsInput
@@ -41,18 +42,14 @@ const SetInput: FC<SetInputProps> = ({
           onChange={onChange}
           styles={{
             input: {
-              overflowY: "scroll",
-              maxHeight: rem("250px"),
-              width: !isMobile ? rem("500px") : "100%",
+              overflowY: 'scroll',
+              maxHeight: rem('250px'),
+              width: !isMobile ? rem('500px') : '100%',
             },
           }}
         />
-        <div className={clsx("my-auto pl-5", isMobile && "pt-4")}>
-          <ActionIcon
-            className="mt-auto"
-            variant="filled"
-            onClick={() => onGenerateSet(setLabel)}
-          >
+        <div className={clsx('my-auto pl-5', isMobile && 'pt-4')}>
+          <ActionIcon className="mt-auto" variant="filled" onClick={() => onGenerateSet(setLabel)}>
             <IconArrowsShuffle className="m-auto" />
           </ActionIcon>
         </div>

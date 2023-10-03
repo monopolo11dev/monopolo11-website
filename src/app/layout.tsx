@@ -1,16 +1,17 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
-import "@mantine/core/styles.css";
-import { MantineProvider, ColorSchemeScript } from "@mantine/core";
-import { HeaderMenu } from "@/components/HeaderMenu";
-import { Footer } from "@/components/Footer";
-import clsx from "clsx";
+import './globals.css';
+import '@mantine/core/styles.css';
+import { Inter } from 'next/font/google';
+import { MantineProvider, ColorSchemeScript } from '@mantine/core';
+import { Metadata } from 'next';
+import { ReactNode } from 'react';
+import clsx from 'clsx';
 
-import { ReactNode } from "react";
-import { Metadata } from "next";
-import Analytics from "@/components/Analytics";
+import Analytics from '@/components/Analytics';
+import { HeaderMenu } from '@/components/HeaderMenu';
+import { Footer } from '@/components/Footer';
+import { theme } from '@/theme';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Monopolo11's Website",
@@ -21,11 +22,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <ColorSchemeScript />
+        <ColorSchemeScript defaultColorScheme="dark" />
       </head>
-      <body className={clsx("h-full", inter.className)}>
+      <body className={clsx('h-full', inter.className)}>
         <Analytics />
-        <MantineProvider defaultColorScheme="dark">
+        <MantineProvider theme={theme} defaultColorScheme="dark">
           <HeaderMenu />
           {children}
           <Footer />
