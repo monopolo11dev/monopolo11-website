@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/monopolo11/monopolo11-website/compare/v1.2.1...v1.3.0) (2023-10-03)
+
+
+### Features
+
+* **patch:** remove matomo ([2749ec9](https://github.com/monopolo11/monopolo11-website/commit/2749ec92fc13dcf75093f4a50e8939e71c9b8ff0))
+
 ## [1.2.1](https://github.com/monopolo11/monopolo11-website/compare/v1.2.0...v1.2.1) (2023-10-03)
 
 
