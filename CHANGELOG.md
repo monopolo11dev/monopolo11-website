@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/monopolo11/monopolo11-website/compare/v1.2.0...v1.2.1) (2023-10-03)
+
+
+### Bug Fixes
+
+* **patch:** fix styles ([2e167e1](https://github.com/monopolo11/monopolo11-website/commit/2e167e1d67698204e6d9ca6e5a2b69c391f30520))
+
 # [1.2.0](https://github.com/monopolo11/monopolo11-website/compare/v1.1.4...v1.2.0) (2023-10-03)
 
 
