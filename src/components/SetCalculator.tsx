@@ -180,7 +180,6 @@ const SetCalculator: FC = () => {
   return (
     <div className={clsx('flex flex-col items-center top-0')}>
       <LoadingOverlay visible={isLoading} zIndex={1000} overlayProps={{ radius: 'sm', blur: 2 }} />
-
       <Title order={1}>Calculadora de conjuntos</Title>
       {!hideAlert && (
         <Flex className="w-1/2 my-6">
@@ -291,11 +290,11 @@ const SetCalculator: FC = () => {
               {({ copied, copy }) => (
                 <Button
                   variant="filled"
-                  color={copied ? 'teal' : 'blue'}
+                  color={copied ? 'teal' : ''}
                   onClick={copy}
                   style={{ width: rem('185px') }}
                 >
-                  {copied ? 'Copiadi' : 'Copiar Resultado'}
+                  {copied ? 'Copiado' : 'Copiar Resultado'}
                 </Button>
               )}
             </CopyButton>

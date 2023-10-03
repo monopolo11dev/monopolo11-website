@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { LEGACY_ROUTES } from '@/constants';
 import { Illustration404 } from '@/components/Illustration404';
-import classes from './not-found.module.css';
+import classes from './error.module.css';
 
 const LEGACY_TEXT =
   "Sorry, we couldn't find what you were looking for. You are probably looking for a page that was moved to a legacy page.";
