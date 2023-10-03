@@ -19,6 +19,7 @@ import { IconChevronDown } from '@tabler/icons-react';
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 import Link from 'next/link';
+import clsx from 'clsx';
 import classes from './HeaderMenu.module.css';
 import { AppRoutes } from '@/constants';
 
@@ -62,10 +63,10 @@ export function HeaderMenu() {
   });
 
   return (
-    <Box pb={120}>
+    <Box>
       <header className={classes.header}>
-        <Container size="85%">
-          <div className={classes.inner}>
+        <Container size="85%" className="h-full">
+          <div className={clsx(classes.inner, 'h-full')}>
             <Link href="/">
               <Title order={1} size={isMobile ? '24' : '30'}>
                 Monopolo11&apos;s Website
@@ -90,7 +91,7 @@ export function HeaderMenu() {
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
           {links.map((link) => (
-            <Link href={link.link} className={classes.link}>
+            <Link href={link.link} key={link.label} className={classes.link}>
               {link.label}
             </Link>
           ))}

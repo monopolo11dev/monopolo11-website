@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
         <ColorSchemeScript defaultColorScheme="dark" />
       </head>
-      <body className={clsx('h-full', inter.className)}>
+      <body className={clsx(inter.className)}>
         <Analytics />
         <MantineProvider theme={theme} defaultColorScheme="dark">
           <HeaderMenu />

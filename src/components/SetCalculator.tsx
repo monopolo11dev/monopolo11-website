@@ -178,7 +178,7 @@ const SetCalculator: FC = () => {
   }, [operation]);
 
   return (
-    <div className={clsx('flex flex-col items-center top-0')}>
+    <div className={clsx('flex flex-col items-center')}>
       <LoadingOverlay visible={isLoading} zIndex={1000} overlayProps={{ radius: 'sm', blur: 2 }} />
       <Title order={1}>Calculadora de conjuntos</Title>
       {!hideAlert && (
