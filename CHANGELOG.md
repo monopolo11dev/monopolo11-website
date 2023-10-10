@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/monopolo11/monopolo11-website/compare/v1.3.0...v1.4.0) (2023-10-10)
+
+
+### Features
+
+* added changelog page ([1e32a01](https://github.com/monopolo11/monopolo11-website/commit/1e32a012b3e8809cf3198adc3a3ed17d3c3ff3e1))
+
 # [1.3.0](https://github.com/monopolo11/monopolo11-website/compare/v1.2.1...v1.3.0) (2023-10-03)
 
 
