@@ -27,6 +27,7 @@
     "clsx": "^2.0.0",
     "dayjs": "^1.11.10",
     "embla-carousel-react": "^7.1.0",
+    "markdown-to-jsx": "^7.3.2",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
