@@ -3,6 +3,7 @@
 import { Anchor, Group, ActionIcon, rem, Flex } from '@mantine/core';
 import { IconBrandGithub } from '@tabler/icons-react';
 import clsx from 'clsx';
+import Link from 'next/link';
 import classes from './Footer.module.css';
 import packageInfo from '../../package.json';
 import { AppRoutes } from '@/constants';
@@ -30,7 +31,9 @@ export function Footer() {
         <Flex className="space-x-4">
           <p>Copyright {new Date().getFullYear()}. Monopolo11</p>
 
-          <p>Version:{packageInfo.version}</p>
+          <Link href="/changelog">
+            <p>Version:{packageInfo.version}</p>
+          </Link>
         </Flex>
 
         <Group gap="xs" justify="flex-end" wrap="nowrap">
