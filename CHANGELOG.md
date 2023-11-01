@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/monopolo11/monopolo11-website/compare/v1.4.0...v1.4.1) (2023-11-01)
+
+
+### Bug Fixes
+
+* **minor:** linting ([3862120](https://github.com/monopolo11/monopolo11-website/commit/38621207d3b6482fdad1b484964e34e54f6366b0))
+
 # [1.4.0](https://github.com/monopolo11/monopolo11-website/compare/v1.3.0...v1.4.0) (2023-10-10)
 
 
