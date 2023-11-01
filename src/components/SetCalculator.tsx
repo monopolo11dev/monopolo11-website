@@ -104,7 +104,8 @@ const SetCalculator: FC = () => {
     return setSetB(generateRandomSet(universe));
   };
 
-  const handleOperationChange = (value: string) => {
+  const handleOperationChange = (value: string | null) => {
+		if(value === null) return;
     const operationRes = OPERATIONS.filter((item) => item.name === value);
     setOperationSelection(value);
     if (operationRes[0]) setOperation(operationRes[0]);
