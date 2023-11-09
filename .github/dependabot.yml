@@ -10,8 +10,8 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      production-dependencies:
-        patterns: 
+      dependencies:
+        patterns:
           - "*"
     commit-message:
       prefix: "build(deps): "
