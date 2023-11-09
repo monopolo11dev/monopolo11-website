@@ -25,6 +25,11 @@
           {
             "type": "refactor",
             "release": "patch"
+          },
+          {
+            "type": "build",
+            "scope": "deps",
+            "release": "patch"
           }
         ]
       }
