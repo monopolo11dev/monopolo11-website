@@ -9,10 +9,10 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    assignees:
+          - "monopolo11"
     groups:
       dependencies:
-        assignees:
-          - "octocat"
         patterns:
           - "*"
     commit-message:
