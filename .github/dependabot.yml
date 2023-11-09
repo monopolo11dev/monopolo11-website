@@ -11,6 +11,8 @@ updates:
       interval: "weekly"
     groups:
       dependencies:
+        assignees:
+          - "octocat"
         patterns:
           - "*"
     commit-message:
