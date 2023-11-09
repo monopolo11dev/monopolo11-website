@@ -22,7 +22,7 @@
     "@mantine/modals": "^7.2.1",
     "@mantine/notifications": "^7.2.1",
     "@mantine/nprogress": "^7.2.1",
-    "@sentry/nextjs": "^7.79.0",
+    "@sentry/nextjs": "^7.80.0",
     "@tabler/icons-react": "^2.40.0",
     "clsx": "^2.0.0",
     "dayjs": "^1.11.10",
