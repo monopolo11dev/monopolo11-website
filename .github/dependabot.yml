@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: "weekly"
     assignees:
-          - "monopolo11"
+          - "Monopolo11"
     groups:
       dependencies:
         patterns:
