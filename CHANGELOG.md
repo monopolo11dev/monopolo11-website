@@ -1,3 +1,5 @@
+## [1.4.7](https://github.com/monopolo11/monopolo11-website/compare/v1.4.6...v1.4.7) (2023-11-27)
+
 ## [1.4.6](https://github.com/monopolo11/monopolo11-website/compare/v1.4.5...v1.4.6) (2023-11-21)
 
 ## [1.4.5](https://github.com/monopolo11/monopolo11-website/compare/v1.4.4...v1.4.5) (2023-11-14)
