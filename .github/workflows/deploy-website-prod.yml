@@ -71,7 +71,7 @@ jobs:
     steps:
       - name: Invoke deployment hook
         run: |
-          response=$(curl -I --location --request POST '${{ secrets.PORTAINER_WEBHOOK }}')
+          response=$(curl -k -I --location --request POST '${{ secrets.PORTAINER_WEBHOOK }}')
           echo $response
 
       - name: Wait for 1 minute
