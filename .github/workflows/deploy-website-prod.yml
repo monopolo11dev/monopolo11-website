@@ -70,11 +70,9 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Invoke deployment hook
-        uses: distributhor/workflow-webhook@v2
-        env:
-          webhook_url: ${{ secrets.PORTAINER_WEBHOOK }}
-          webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
-          verify_ssl: false
+        run: |
+          response=$(curl --location --request POST '${{ secrets.PORTAINER_WEBHOOK }}')
+          echo $response
 
       - name: Wait for 1 minute
         run: sleep 45
