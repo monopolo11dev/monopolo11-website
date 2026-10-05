@@ -23,7 +23,7 @@
     "@mantine/notifications": "^7.5.1",
     "@mantine/nprogress": "^7.5.1",
     "@sentry/nextjs": "^7.99.0",
-    "@tabler/icons-react": "^2.47.0",
+    "@tabler/icons-react": "^3.0.0",
     "clsx": "^2.1.0",
     "dayjs": "^1.11.10",
     "embla-carousel-react": "^7.1.0",
