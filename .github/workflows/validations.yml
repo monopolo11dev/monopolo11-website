@@ -20,14 +20,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22.23.4"
+
       - name: Install package
         run: |
-          npm install
-
-      - name: Create env file
-        run: |
-          touch .env
-          echo SENTRY_AUTH_TOKEN=${{ secrets.SENTRY_AUTH_TOKEN }} >> .env
+          npm ci
 
       - name: Validate linting
         run: |
