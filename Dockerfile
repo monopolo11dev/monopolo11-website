@@ -1,9 +1,15 @@
-FROM node:18-alpine AS base
+FROM node:22.23.4-alpine3.23 AS base
+
+# Update system trust as well as Node's embedded Mozilla roots.
+RUN apk add --no-cache --upgrade 'ca-certificates>=20261020-r0' 'ca-certificates-bundle>=20261020-r0' \
+  && update-ca-certificates
+COPY docker/check-ca-trust.cjs /usr/local/bin/check-ca-trust.cjs
+RUN node /usr/local/bin/check-ca-trust.cjs
 
 # Install dependencies only when needed
 FROM base AS deps
-# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
-RUN apk add --no-cache libc6-compat
+# Alpine 3.23 uses gcompat for glibc compatibility.
+RUN apk add --no-cache gcompat
 WORKDIR /app
 
 # Install dependencies based on the preferred package manager
