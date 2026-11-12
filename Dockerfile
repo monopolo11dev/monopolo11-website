@@ -1,4 +1,4 @@
-FROM node:22.23.4-alpine3.23 AS base
+FROM node:22.23.5-alpine3.23 AS base
 
 # Update system trust as well as Node's embedded Mozilla roots.
 RUN apk add --no-cache --upgrade 'ca-certificates>=20261020-r0' 'ca-certificates-bundle>=20261020-r0' \
